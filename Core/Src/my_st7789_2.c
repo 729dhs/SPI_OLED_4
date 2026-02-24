@@ -66,8 +66,7 @@ static void st7789_write_data_buf(const uint8_t *data, size_t len) {
  * @note 该函数用于定义后续写入操作的像素区域，设置完成后可通过 ST7789_WriteData
  * 写入像素数据
  */
-static void ST7789_SetAddressWindow(uint16_t x0, uint16_t y0, uint16_t x1,
-                                    uint16_t y1) {
+static void ST7789_SetAddressWindow(uint16_t x0, uint16_t y0, uint16_t x1,uint16_t y1) {
   // 计算实际显示坐标（加上偏移量）
   uint16_t x_start = x0 + X_SHIFT, x_end = x1 + X_SHIFT;
   uint16_t y_start = y0 + Y_SHIFT, y_end = y1 + Y_SHIFT;
