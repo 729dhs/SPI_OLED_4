@@ -1,4 +1,13 @@
 /* USER CODE BEGIN Header */
+/** 
+ * @name         : main.c
+ * @author       : 729DHS   guo_114@outlook.com
+ * @date         : 2026-02-20 19:19:59
+ * @brief        : 简单的STM32F103C8 + ST7789OLED240*240 SPI 测试代码
+ * @version      : V1.2
+ * V1.2 2026-02-24 18:13:14 修复了初始化不完全的BUG
+ */
+
 /**
   ******************************************************************************
   * @file           : main.c
@@ -21,6 +30,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+
+#include "my_st7789_2.h"
 
 /* USER CODE END Includes */
 
@@ -91,6 +102,8 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
+
+  ST7789_Init();
 
   /* USER CODE END 2 */
 
