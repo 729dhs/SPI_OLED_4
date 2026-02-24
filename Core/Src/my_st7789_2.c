@@ -10,14 +10,14 @@
  */
 
 
-// TODO -TEST 测试初始化函数
+// DONE -TEST 测试初始化函数
 
 // NEXT 完成其他函数
 
 #include "my_st7789_2.h"
 #include "stm32f1xx_hal.h"
 
-// GOOD -static
+// GOOD -arch static
 // 写驱动的时候,为保证最底层的函数调用是安全的,用static可以确保只在底层文件中调用,避免接口暴露
 
 // 静态函数部分

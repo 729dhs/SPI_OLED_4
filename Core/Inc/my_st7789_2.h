@@ -7,9 +7,9 @@
  * V1.3 2026-02-25 00:23:10 对每个命令都标记了含义以及其在手册的详细位置
  */
 
-// TODO 添加对每个指令的说明,以及其所在具体位置
+// DONE 添加对每个指令的说明,以及其所在具体位置
 
-// PLAN 后续可以加入字符显示功能
+// NEXT 后续可以加入字符显示功能
 
 #ifndef __ST7789_H__
 #define __ST7789_H__
@@ -45,7 +45,7 @@ extern SPI_HandleTypeDef ST7789_SPI_PORT;
 #define ST7789_ROTATION 2
 // #define ST7789_ROTATION 3
 
-// GOOD 使用ifdef来选择分辨率
+// GOOD -arch 使用ifdef来选择分辨率
 
 #ifdef USING_240X240
 
